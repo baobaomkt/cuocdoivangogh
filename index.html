@@ -237,6 +237,84 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: justify;
 }
 </style>
+
+<style>
+/* ===== RESPONSIVE ARTICLE LAYOUT ===== */
+
+.detail-page .container {
+    max-width: 1150px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+.detail-page .lg\:grid {
+    display: block !important;
+}
+
+.detail-page .col-span-8,
+.detail-page .col-span-12 {
+    width: 100% !important;
+}
+
+.detail-page .content {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.detail-page .content p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.detail-page .content img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .detail-page .container {
+        max-width: 100% !important;
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .detail-page {
+        padding-top: 50px !important;
+    }
+
+    .detail-page .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .detail-page .content p {
+        font-size: 16px;
+        line-height: 1.75;
+        text-align: left;
+    }
+
+    .detail-page .content h2 {
+        font-size: 24px !important;
+        line-height: 1.35;
+    }
+
+    .detail-page table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+}
+</style>
+
 </head>
 <body class="bg-white-body" x-data="{ atTop: true }" x-on:scroll.window="atTop = (window.pageYOffset &gt; 60) ? false : true; ">
       <nav id="mobile-menu">
